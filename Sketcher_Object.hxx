@@ -10,7 +10,6 @@
 #include <Standard_Macro.hxx>
 #endif
 
-#include <MMgt_TShared.hxx>
 #include <Standard_DefineHandle.hxx>
 
 #include <Geom2d_Geometry.hxx>

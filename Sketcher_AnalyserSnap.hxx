@@ -7,7 +7,6 @@
 #define SKETCHER_ANALYSERSNAP_H
 
 #include <Standard_Macro.hxx>
-#include <MMgt_TShared.hxx>
 #include <Standard_DefineHandle.hxx>
 
 #include "Sketcher_Object.hxx"

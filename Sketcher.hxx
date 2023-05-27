@@ -17,7 +17,6 @@
 #include <Geom_Line.hxx>
 #include <Geom_Plane.hxx>
 #include <Geom2d_CartesianPoint.hxx>
-#include <V3d_Coordinate.hxx>
 
 #include "Sketcher_SnapType.hxx"
 #include "Sketcher_AnalyserSnap.hxx"
@@ -156,30 +155,30 @@ void ObjectAction(const Sketcher_ObjectTypeOfMethod theMethod);
  Sketcher_ObjectTypeOfMethod GetStatus();
 	
 /**
- * \fn OnMouseInputEvent(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
+ * \fn OnMouseInputEvent(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
  * \brief input event handler
  * \return void 
- * \param v3dX const V3d_Coordinate&
- * \param v3dY const V3d_Coordinate&
- * \param v3dZ const V3d_Coordinate&
+ * \param v3dX const Standard_Real &
+ * \param v3dY const Standard_Real &
+ * \param v3dZ const Standard_Real &
  * \param projVx const Standard_Real&
  * \param projVy const Standard_Real&
  * \param projVz const Standard_Real&
 */
-void OnMouseInputEvent(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
+void OnMouseInputEvent(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
 
 /**
- * \fn OnMouseMoveEvent(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
+ * \fn OnMouseMoveEvent(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
  * \brief mouse move handler
  * \return void 
- * \param v3dX const V3d_Coordinate&
- * \param v3dY const V3d_Coordinate&
- * \param v3dZ const V3d_Coordinate&
+ * \param v3dX const Standard_Real &
+ * \param v3dY const Standard_Real &
+ * \param v3dZ const Standard_Real &
  * \param projVx const Standard_Real&
  * \param projVy const Standard_Real&
  * \param projVz const Standard_Real&
 */
-void OnMouseMoveEvent(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
+void OnMouseMoveEvent(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
 
 /**
  * \fn OnCancel()
@@ -234,17 +233,17 @@ Sketcher_SnapType GetSnap();
 
 private:
 /**
- * \fn ProjectPointOnPlane(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
+ * \fn ProjectPointOnPlane(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz)
  * \brief calculate 2d point on current plane
  * \return Standard_Boolean 
- * \param v3dX const V3d_Coordinate&
- * \param v3dY const V3d_Coordinate&
- * \param v3dZ const V3d_Coordinate&
+ * \param v3dX const Standard_Real &
+ * \param v3dY const Standard_Real &
+ * \param v3dZ const Standard_Real &
  * \param projVx const Standard_Real&
  * \param projVy const Standard_Real&
  * \param projVz const Standard_Real&
 */
-Standard_Boolean ProjectPointOnPlane(const V3d_Coordinate &v3dX,const V3d_Coordinate &v3dY,const V3d_Coordinate &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
+Standard_Boolean ProjectPointOnPlane(const Standard_Real  &v3dX,const Standard_Real  &v3dY,const Standard_Real  &v3dZ,const Standard_Real& projVx,const Standard_Real& projVy,const Standard_Real& projVz);
 
 /**
  * \fn addCommand(Handle(Sketcher_Command) theCommand)

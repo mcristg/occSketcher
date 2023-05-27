@@ -35,7 +35,7 @@ Sketcher_PropertyLine::Sketcher_PropertyLine( QWidget* parent,  const char* name
     TextLabelLength = new QLabel("TextLabelLength", GroupBoxAttributes);
     TextLabelLength->setText( tr( "Length" ) );
     LineEditLength = new QLineEdit("LineEditLength", GroupBoxAttributes);
-    LineEditLength->setEnabled( FALSE );
+    LineEditLength->setEnabled( false );
 
     GroupBoxAttributesLayout->addWidget( TextLabelLength, 4, 0 );
     GroupBoxAttributesLayout->addWidget( LineEditLength, 4, 1 );

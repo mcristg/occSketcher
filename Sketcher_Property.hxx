@@ -6,17 +6,17 @@
 #ifndef Sketcher_Property_H
 #define Sketcher_Property_H
 
-#include <qvariant.h>
-#include <qwidget.h>
+#include <QVariant>
+#include <QWidget>
 
-#include <qcombobox.h>
-#include <qgroupbox.h>
-#include <qlabel.h>
-#include <qlineedit.h>
-#include <qpushbutton.h>
-#include <qlayout.h>
-#include <qtooltip.h>
-#include <qwhatsthis.h>
+#include <QComboBox>
+#include <QGroupBox>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QLayout>
+#include <QToolTip>
+#include <QWhatsThis>
 
 #include <AIS_InteractiveObject.hxx>
 #include <AIS_InteractiveContext.hxx>
