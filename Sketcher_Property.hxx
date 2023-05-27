@@ -279,7 +279,7 @@ QGridLayout*					GroupBoxAttributesLayout;
 bool							isPointWindow;
 
 const QString					StartCoord,MidCoord,EndCoord;
-const QRegExp					NumberExpr;
+const QRegularExpression    	NumberExpr;
 QString							NumName;
 
 Handle(AIS_InteractiveContext)	myContext;

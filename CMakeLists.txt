@@ -83,7 +83,7 @@ Sketcher_SnapLinePerpendicular.cxx
 Sketcher_SnapMiddle.cxx
 Sketcher_SnapNearest.cxx
 Sketcher_SnapTangent.cxx)
-  
+
 message(STATUS "mis fuentes -- ${occSketcher_SRC}")
 add_library(occSketcher MODULE ${occSketcher_SRC})
-target_link_libraries(occSketcher ${OpenCASCADE_LIBRARIES})  
+target_link_libraries(occSketcher ${OpenCASCADE_LIBRARIES})

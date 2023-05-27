@@ -45,7 +45,7 @@ Sketcher_Property::Sketcher_Property( QWidget* parent,  const char* name)
     GroupBoxGP->setTitle( tr( "Geometry Properties" ) );
     //GroupBoxGP->setColumnLayout(0, Qt::Vertical );
     GroupBoxGP->layout()->setSpacing( 0 );
-    GroupBoxGP->layout()->setMargin( 0 );
+    GroupBoxGP->layout()->setContentsMargins(0, 0, 0, 0);
 
     TextLabelPoint1 = new QLabel("TextLabelPoint1", GroupBoxGP);
     LineEditPoint1 = new QLineEdit( "LineEditPoint1", GroupBoxGP);
@@ -53,7 +53,7 @@ Sketcher_Property::Sketcher_Property( QWidget* parent,  const char* name)
     GroupBoxGPLayout = new QGridLayout( GroupBoxGP);
     GroupBoxGPLayout->setAlignment( Qt::AlignTop );
     GroupBoxGPLayout->setSpacing( 6 );
-    GroupBoxGPLayout->setMargin( 11 );
+    GroupBoxGPLayout->setContentsMargins( 11, 11, 11, 11 );
     GroupBoxGPLayout->addWidget( TextLabelPoint1, 0, 0 );
     GroupBoxGPLayout->addWidget( LineEditPoint1, 0, 1 );
 
@@ -63,7 +63,7 @@ Sketcher_Property::Sketcher_Property( QWidget* parent,  const char* name)
     GroupBoxAttributes->setTitle( tr( "Attributes" ) );
     //GroupBoxAttributes->setColumnLayout(0, Qt::Vertical );
     GroupBoxAttributes->layout()->setSpacing( 0 );
-    GroupBoxAttributes->layout()->setMargin( 0 );
+    GroupBoxAttributes->layout()->setContentsMargins(0, 0, 0, 0);
 
     TextLabelColor = new QLabel( GroupBoxAttributes);
     TextLabelColor->setText( tr( "Color" ) );
@@ -96,7 +96,7 @@ Sketcher_Property::Sketcher_Property( QWidget* parent,  const char* name)
     GroupBoxAttributesLayout = new QGridLayout( GroupBoxAttributes);
     GroupBoxAttributesLayout->setAlignment( Qt::AlignTop );
     GroupBoxAttributesLayout->setSpacing( 6 );
-    GroupBoxAttributesLayout->setMargin( 11 );
+    GroupBoxAttributesLayout->setContentsMargins( 11, 11, 11, 11 );
     GroupBoxAttributesLayout->addWidget( TextLabelColor, 0, 0 );
     GroupBoxAttributesLayout->addWidget( ComboBoxColor, 0, 1 );
     GroupBoxAttributesLayout->addWidget( TextLabelType, 1, 0 );
@@ -123,7 +123,7 @@ Sketcher_Property::Sketcher_Property( QWidget* parent,  const char* name)
 
     PropertyLayout = new QGridLayout( this ); 
     PropertyLayout->setSpacing( 6 );
-    PropertyLayout->setMargin( 11 );
+    PropertyLayout->setContentsMargins( 11, 11, 11, 11 );
     PropertyLayout->addWidget( TextLabelID, 0, 0 );
     //PropertyLayout->addMultiCellWidget( LineEditID, 0, 0, 1, 5 );
     PropertyLayout->addItem( spacer_1, 1, 3 );
